@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check Marks and Grade</h1>
+    <button onclick="checkMarks()">Check Result</button>
+    <button onclick="checkGrade()">Check Grade</button>
+    <p id="result"></p>
+    <p id="grade"></p>
+
+    <script>
+        let marks;
+
+        function checkMarks() {
+            marks = prompt("Please enter your marks:");
+            if (marks >= 35) {
+                document.getElementById("result").innerText = "Pass";
+            } else {
+                document.getElementById("result").innerText = "Fail";
+            }
+        }
+        function checkGrade() {
+            if (marks >= 190) {
+                document.getElementById("grade").innerText = "Grade: A+";
+            } else if (marks >= 180) {
+                document.getElementById("grade").innerText = "Grade: A";
+            } else if (marks >= 170) {
+                document.getElementById("grade").innerText = "Grade: B";
+            } else if (marks >= 160) {
+                document.getElementById("grade").innerText = "Grade: C";
+            } else if (marks >= 135) {
+                document.getElementById("grade").innerText = "Grade: D";
+            } else if (marks < 35) {
+                document.getElementById("grade").innerText = "No Grade";
+            }
+        }
+    </script>
+    
+</body>
+</html>
