@@ -1,0 +1,25 @@
+<!--Create a Higher Order Function to calculate the square of 
+a number.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function square(n) {
+            return n * n;
+        }
+        function calculate(fun, x) {
+            console.log(fun(x));
+        }
+        calculate(square, 5);
+    </script>
+</body>
+
+</html>

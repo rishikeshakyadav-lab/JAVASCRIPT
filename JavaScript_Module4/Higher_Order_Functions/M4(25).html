@@ -1,0 +1,37 @@
+<!--Create a Higher Order Function that accepts an operation 
+and performs addition, subtraction, multiplication or division.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+
+        function subtract(a, b) {
+            return a - b;
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+
+        function calculate(fun, a, b) {
+            return fun(a, b);
+        }
+
+        console.log(calculate(add, 20, 10));
+        console.log(calculate(subtract, 20, 10));
+        console.log(calculate(multiply, 20, 10)); 
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!--ARRAYS-->
+
+<!--Add a Student Name-->
+<!--Push-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students =
+            [
+                "Rahul",
+                "Neha",
+                "Amit"
+            ];
+        students.push("Priya");
+        alert(students); 
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--Unshift-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let cities =
+            [
+                "Delhi",
+                "Mumbai"
+            ];
+        cities.unshift("Pune");
+        alert(cities);
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--POP-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fruits =
+            [
+                "Apple",
+                "Mango",
+                "Orange"
+            ];
+        fruits.pop();
+        console.log(fruits); 
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--Shift-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let students =
+            [
+                "Rahul",
+                "Neha",
+                "Amit"
+            ];
+        students.shift();
+        alert(students); 
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--Slice-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+       let fruits = 
+        [ 
+            "Apple", 
+            "Banana", 
+            "Orange", 
+            "Mango" 
+        ]; 
+        alert(fruits.slice(1,3));
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--concat-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let odd =
+    [
+    1,
+    3,
+    5
+    ];
+
+    let even =
+    [
+    2,
+    4,
+    6
+    ];
+
+    let numbers = odd.concat(even);
+    alert(numbers);
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--indexOf-->
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let colors =
+            [
+                "Red",
+                "Blue",
+                "Green"
+            ];
+        alert(colors.indexOf("Green")); 
+    </script>
+</body>
+
+</html>
+-->
+
+<!--=========================================================================================-->
+
+<!--lastIndexOf-->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let marks =
+            [
+                80,
+                90,
+                80,
+                70
+            ];
+        alert(marks.lastIndexOf(80)); 
+    </script>
+</body>
+
+</html> 
+-->
+
+<!--=========================================================================================-->
+
+<!--map-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers =
+            [
+                10,
+                20,
+                30,
+                40
+            ];
+
+        let square = numbers.map(function (num) {
+            return num * num;
+        });
+
+        alert(square); 
+    </script>
+</body>
+
+</html> -->
+
+<!--=========================================================================================-->
+
+<!--filter-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let age =
+            [
+                12,
+                18,
+                20,
+                15,
+                25
+            ];
+        let adult = age.filter(function (item) {
+            return item >= 18;
+        });
+        alert(adult); 
+    </script>
+</body>
+
+</html> -->
+
+<!--=========================================================================================-->
+
+<!--reduce-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let marks =
+            [
+                60,
+                70,
+                80,
+                90
+            ];
+        let total = marks.reduce(function (sum, value) {
+            return sum + value;
+        }, 0);
+        alert(total); 
+    </script>
+</body>
+
+</html> -->
+
+<!--=========================================================================================-->
+
+<!--Spread Syntax (...)-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let classA =
+            [
+                "Rahul",
+                "Amit"
+            ];
+        let classB =
+            [
+                "Neha",
+                "Priya"
+            ];
+        let students =
+            [
+                ...classA,
+                ...classB
+            ];
+        alert(students); 
+    </script>
+</body>
+
+</html> -->
+
+<!--=========================================================================================-->

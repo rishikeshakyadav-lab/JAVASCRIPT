@@ -1,0 +1,25 @@
+<!--Create a function that returns a function to add 10 to a 
+number.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function addTen() {
+            return function (n) {
+                return n + 10;
+            }
+        }
+        let result = addTen();
+        console.log(result(20));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!--Create a function that returns a function to calculate the 
+square.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function square() {
+            return function (n) {
+                return n * n;
+            }
+        }
+        let result = square();
+        console.log(result(5));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!--Create a function "power()" that returns a function to 
+calculate a number raised to a power.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function power(x) {
+
+            return function (y) {
+                return x ** y;
+            };
+        }
+
+        let result = power(2);
+
+        console.log(result(3));
+    </script>
+</body>
+
+</html>

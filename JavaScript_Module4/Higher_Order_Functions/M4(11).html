@@ -1,0 +1,27 @@
+Returning Functions from Functions
+
+<!--Create a function that returns another function.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function outer() {
+            return function inner() {
+                console.log("Hello Students");
+            }
+        }
+        let result = outer();
+
+        result();
+    </script>
+</body>
+
+</html>

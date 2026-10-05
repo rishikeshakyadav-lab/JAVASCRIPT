@@ -1,0 +1,22 @@
+<!--Create a function that returns a function to calculate 
+simple interest.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function simpleInterest() {
+            return function (principal, rate, time) {
+                return (principal * rate * time) / 100;
+            }
+        }
+        let result = simpleInterest();
+        console.log(result(1000, 5, 2));
+    </script>
+</body>
+</html>

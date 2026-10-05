@@ -1,0 +1,22 @@
+<!--Create a function "discount()" that returns a function to 
+calculate discounted price.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function discount () {
+            return function (price, discount) {
+                return price - (price * discount / 100);
+            }
+        }
+        let tenpercent = discount();
+        console.log(tenpercent(1000, 10));
+    </script>
+</body>
+</html>
